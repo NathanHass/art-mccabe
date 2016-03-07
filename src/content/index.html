@@ -1,0 +1,75 @@
+---
+title: Art McCabe
+---
+{% extends "layouts/base.twig" %}
+
+{% block content %}
+  {% for data in data.content %}
+    <div class="hp-topper">
+      <div class="hp-topper__hgroup">
+        <div class="headshot">
+          <img class="headshot__img" src="{{data.headshot.src}}" alt="{{data.headshot.alt}}">
+        </div>
+        <h1 class="hp-topper__name">{{data.intro.title}}</h1>
+        <h3 class="hp-topper__title">{{data.intro.subtitle}}</h2>
+
+        <ul class="contact-info">
+          <li class="contact-info__item contact-info__item--linkedin"><a href="{{data.contact.linkedin}}" target="_blank">LinkedIn</a></li>
+          <li class="contact-info__item contact-info__item--phone"><a href="tel:{{data.contact.phone}}">{{data.contact.phone}}</a></li>
+          <li class="contact-info__item contact-info__item--email"><a href="mailto:{{data.contact.email}}">{{data.contact.email}}</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="intro">
+
+        <!-- <div class="headshot">
+          <img class="headshot__img" src="{{data.headshot.src}}" alt="{{data.headshot.alt}}">
+        </div> -->
+
+          {% for paragraph in data.intro.text %}
+            <p class="intro__text">{{paragraph}}</p>
+          {% endfor %}
+      </div>
+      <div class="quote-mod">
+        <blockquote class="quote">
+          <p class="quote__text">{{data.quote.text}}</p>
+          <p class="quote__attrib">{{data.quote.attrib}}</p>
+        </blockquote>
+      </div>
+
+      <div class="hp__column-mod">
+        <div class="hp__columns">
+          <p>My wide range of experience has demonstrated a consistent ability to identify and bring together diverse, often conflicting, stakeholders to build consensus and match resources to needs in a wide range of venues. This has prepared me to address matters of economic development, community development and social justice and recognizing that all 3 must be balanced to improve our society.</p>
+
+          <p>I am equally comfortable meeting in corporate boardrooms, before governmental agencies and conducting workshops as I am working at the community level with people across the socio-demographic spectrum. My forte is capacity building and project management premised upon a truly collaborative spirit.</p>
+
+          <p>I look forward to the opportunity to work with you!</p>
+
+          <p class="hp__name">Art McCabe</p>
+        </div>
+      </div>
+
+      <div class="hp__photo-break">
+
+      </div>
+
+      <div class="hp__section">
+        <h2 class="hp__section__h">Capabilities</h2>
+        <ul class="capability-list">
+          <li class="capability-item">Senior Management</li>
+          <li class="capability-item">Project Management</li>
+          <li class="capability-item">Program Management</li>
+          <li class="capability-item">Economic Development</li>
+          <li class="capability-item">Community Development</li>
+          <li class="capability-item">Government Relations</li>
+          <li class="capability-item">Teaching</li>
+          <li class="capability-item">Grant Writing</li>
+          <li class="capability-item">Administration</li>
+        </ul>
+      </div>
+
+    </div>
+  {% endfor %}
+{% endblock %}

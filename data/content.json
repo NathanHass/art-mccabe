@@ -1,0 +1,44 @@
+[
+  {
+    "intro": {
+      "title": "Art McCabe",
+      "subtitle": "Strategic Planning &amp; Project Management",
+      "text": [
+        "Throughout my career in the public and private sector, I have had a passionate commitment to public service and social justice. I firmly believe that the mission of any organization, public or private, is to improve the quality of life of its constituencies and the communities in which they live and work.",
+        "My philosophy and modus operandi was succinctly stated by Eleanor Roosevelt as Chair of the United Nations Commission that wrote the Universal Declaration of Human Rights in 1948:"
+      ]
+    },
+    "quote": {
+      "text": " In small places, close to home – so close and so small that they cannot be seen on any maps of the world. Yet they are the world of the individual person; the neighborhood he lives in; the school or college he attends; the factory, farm or office where he works. Such are the places where every man, woman and child seeks equal justice, equal opportunity, equal dignity without discrimination. Unless these rights have meaning there, they have little meaning anywhere. Without concerned citizen action to uphold them close to home, we shall look in vain for progress in the larger world.",
+      "attrib": "Eleanor Roosevelt"
+    },
+    "coming_soon": "Stay tuned for my new website coming soon. Until then, please feel free to get in touch.",
+    "contact": {
+      "name": "Art McCabe",
+      "phone": "978-423-4834",
+      "email": "artmccabe@me.com",
+      "linkedin": "https://www.linkedin.com/in/artmccabeandover"
+    },
+    "headshot": {
+      "src": "/static/img/art-in-the-wild.jpg",
+      "alt": "headshot"
+    },
+    "community_images": [
+      {
+        "src": "/static/img/img-1.jpg",
+        "alt": "test",
+        "caption": "this is a test caption 01"
+      },
+      {
+        "src": "/static/img/img-2.jpg",
+        "alt": "test",
+        "caption": "this is a test caption 02"
+      },
+      {
+        "src": "/static/img/img-3.jpg",
+        "alt": "test",
+        "caption": "this is a test caption 03"
+      }
+    ]
+  }
+]

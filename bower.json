@@ -1,0 +1,9 @@
+{
+  "name": "art-mccabe-temp",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "upbase": "git@github.com:Upstatement/upbase#upbase-neue",
+    "Swiper": "swiper#~3.3.0"
+  }
+}

@@ -1,0 +1,21 @@
+// basic framework elements
+// -----------------------------------------------------------------
+
+// variables
+@import 'variables';
+
+// upbase
+@import 'upbase/scss/upbase';
+
+// styles
+@import 'base-global';
+@import 'base-typography';
+@import 'mixins';
+
+@import 'swiper';
+@import 'type';
+@import 'temp';
+@import 'testimonials';
+
+// components
+@import 'nav';

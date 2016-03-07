@@ -1,0 +1,33 @@
+---
+title: Testimonials
+---
+{% extends "layouts/base.twig" %}
+
+{% block content %}
+
+  <div class="page__topper">
+    <div class="page__topper__width">
+      <h1 class="page__topper__name">Testimonials</h1>
+    </div>
+  </div>
+  <ul class="testimonial-list page__content">
+
+  {% for data in data.testimonials %}
+
+    {% for testimonial in data.testimonials %}
+      <li class="testimonial">
+        <div class="testimonial__width">
+          <div class="testimonial__p-mod">
+            {% for paragraph in testimonial.text %}
+              <p class="testimonial__p">{{paragraph}}</p>
+            {% endfor %}
+          </div>
+          <p class="testimonial__credit">{{testimonial.credit}}</p>
+        </div>
+      </li>
+    {% endfor %}
+  {% endfor %}
+
+  </ul>
+
+{% endblock %}

@@ -1,0 +1,52 @@
+.site-content {
+  padding-top: 73px;
+  min-height: 100vh;
+}
+
+.nav {
+  border-top: 2px solid #1F9ABF;
+  @include fixed(0 0 n 0);
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  z-index: 99;
+}
+
+.nav__width {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.nav__logo {
+  @include reset-link;
+  @include font($sans, 20px, bold);
+  margin-bottom: 0;
+}
+
+.nav__logo-mod {
+  float: left;
+}
+
+.nav__page__list {
+  float: right;
+  line-height: 1.5;
+}
+
+.nav__page__item {
+  display: inline-block;
+  padding: 0 5px;
+
+  @include mq($bp--phablet) {
+    padding: 0 20px;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.nav__page__link {
+  @include reset-link;
+  @include font($sans, 18px);
+}

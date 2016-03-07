@@ -1,0 +1,55 @@
+---
+title: Art McCabe
+---
+{% extends "layouts/base.twig" %}
+
+{% block content %}
+  {% for data in data.content %}
+    <div class="content">
+      <div class="intro">
+
+        <div class="intro__hgroup">
+          <h1 class="intro__name">{{data.intro.title}}</h1>
+          <h3 class="intro__title">{{data.intro.subtitle}}</h2>
+        </div>
+
+        <ul class="contact-info">
+          <li class="contact-info__item contact-info__item--linkedin"><a href="{{data.contact.linkedin}}" target="_blank">LinkedIn</a></li>
+          <li class="contact-info__item contact-info__item--phone"><a href="tel:{{data.contact.phone}}">{{data.contact.phone}}</a></li>
+          <li class="contact-info__item contact-info__item--email"><a href="mailto:{{data.contact.email}}">{{data.contact.email}}</a></li>
+        </ul>
+
+        <div class="headshot">
+          <img class="headshot__img" src="{{data.headshot.src}}" alt="{{data.headshot.alt}}">
+        </div>
+
+          {% for paragraph in data.intro.text %}
+            <p class="intro__text">{{paragraph}}</p>
+          {% endfor %}
+      </div>
+
+      <blockquote class="quote">
+        <p class="quote__text">{{data.quote.text}}</p>
+        <p class="quote__attrib">{{data.quote.attrib}}</p>
+      </blockquote>
+    </div>
+
+
+
+      <div class="comm-images">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            {% for image in data.community_images %}
+              <figure class="swiper-slide comm-images__figure">
+                <img class="comm-image__figure__img" src="{{image.src}}" alt="{{image.alt}}">
+                <figcaption class="comm-image__figure__cap">{{image.caption}}</figcaption>
+              </figure>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        Arthur McCabe © 2016
+      </footer>
+  {% endfor %}
+{% endblock %}
